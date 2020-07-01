@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -26,10 +28,28 @@
     <!-- Javascript -->
     <script src="script.js"></script>
 
-    
+    <header class="container-fluid text-center">
+        <h1>Weather Dashboard</h1>
+    </header>
 
+    <div class="container-fluid">
+        <div class="row">
 
-    
+            <!-- Left column for city search -->
+            <div class="col-3" id="cityCol">
+                <h5>Search for a City:</h5>
+                <input type="text" id="citySearch">
+                <button type="button" id="searchBtn" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                <div id="cityList"></div>
+            </div>
 
+            <!-- Right side of page with weather info -->
+            <div class="col-9" id="weatherCol">
+                <div id="currentWeather" class="card"></div>
+                <div id="futureWeather" class="card"></div>
+            </div>
+
+        </div>
+    </div>
 
 </body>

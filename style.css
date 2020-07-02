@@ -8,3 +8,54 @@ header {
     padding-top: 1rem;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: darkblue;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.btn-primary {
+    background-color: darkblue;
+}
+
+.low {
+    background-color: lightgreen;
+}
+
+.high {
+    background-color: lightyellow;
+}
+
+.extreme {
+    background-color: lightsalmon;
+}
+
+span {
+    padding: 0.5rem;
+    font-weight: bolder;
+}
+
+.weatherCard {
+    background-color: lightgrey;
+}
+
+h3,
+p {
+    margin-left: 1rem;
+}
+
+.card-deck {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+h4 {
+    margin: 1rem;
+}

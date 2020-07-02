@@ -131,14 +131,14 @@ function displayFutureWeather() {
         forecast.append(forecastRow);
 
         for (i = 0; i < 5; i++) {
-            var forecastDay = $("<div class='card'>");
+            var forecastDay = $("<div class='weatherCard card'>");
             var date = new Date();
             var nextDate = (date.getMonth() + 1) + "/" + (date.getDate() + i + 1) + "/" + date.getFullYear();
             var forecastDate = $("<h6>").text(nextDate);
 
             forecastDay.append(forecastDate);
             var weatherIcon = response.list[i].weather[0].icon;
-            forecastDay.append($("<img src=http://openweathermap.org/img/wn/" + weatherIcon + "@2x.png />"));
+            forecastDay.append($("<img src='http://openweathermap.org/img/wn/" + weatherIcon + "@2x.png' width='50' />"));
             var forecastTemp = response.list[i].main.temp;
             forecastDay.append($("<p>").text("Temp: " + forecastTemp + "° F"));
             var forecastHumidity = response.list[i].main.humidity;
@@ -154,7 +154,7 @@ function displayFutureWeather() {
 //loads weather when a list from the city is clicked
 function clickedCity() {
     city = $(this).attr("data-city");
-    
+
     $("#currentWeather").empty();
     $("#futureWeather").empty();
     
